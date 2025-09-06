@@ -1,47 +1,53 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: black;
-  color: white;
+  font-family: Arial, sans-serif;
+  background: #000;
+  color: #fff;
 }
 
-/* header section */
+/* Header Section */
 header {
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  height: 300px;
+
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   background-size: cover;
   background-position: center;
 }
+
 header img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   border: 5px solid #f784c5;
 }
+
 header h1 {
   margin: 10px 0 5px;
 }
+
 header p {
   font-style: italic;
 }
 
-/* two column section */
+/* Two Column Section */
 .two-col {
   display: flex;
   align-items: baseline;
   gap: 425px;
   width: 93%;
   margin: auto;
-  padding: 40px 40px;
-  border-top: 2px solid rgba(27, 96, 47, 0.5);
+  padding: 40px;
   box-sizing: border-box;
+
+  border-top: 2px solid rgba(27, 96, 47, 0.5);
 }
+
 .two-col:first-of-type {
   border-top: none;
 }
@@ -60,22 +66,23 @@ header p {
   padding: 0;
 }
 
-/* text style */
-#about-text{
+/* Text Style */
+#about-text {
   text-align: justify;
   line-height: 1.6;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
+.custom-list {
   margin: 0;
+  padding: 0;
+  list-style: none;
 }
-ul li {
+
+.custom-list li {
   margin: 8px 0;
 }
 
-/* tags */
+/* Skills Tags */
 .skills-tags {
   display: flex;
   flex-wrap: wrap;
@@ -83,37 +90,44 @@ ul li {
 }
 
 .skills-tags span {
-  border: 1px solid #1b602f;
+  display: inline-block;
   padding: 8px 15px;
-  border-radius: 15px;
   font-size: 14px;
-  color: white;
-  white-space: nowrap;
+
+  color: #fff;
+  border: 1px solid #1b602f;
+  border-radius: 15px;
+
   transition: all 0.3s ease;
 }
 
+/* Button */
 .button {
   display: inline-block;
   padding: 10px 20px;
+
+  color: #fff;
   background: #1b602f;
-  color: white;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+
+  transition: background 0.3s ease;
 }
+
 .button:hover {
   background: #145021;
 }
 
-/* footer */
+/* Footer */
 footer {
   max-width: 95%;
-  margin: 40px auto 30px ;
-  background: #f784c5;
-  color: white;
-  border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  margin: 40px auto 30px;
   padding: 10px 15px;
+
+  background: #f784c5;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .footer-name {
@@ -125,13 +139,13 @@ footer {
   display: block;
   width: 100%;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 100px;
-  font-size: 9.9rem;       /* atur biar gede */
+  padding: 0 0 100px;
+
+  font-size: 9.9rem;
   font-weight: 900;
-  text-align: center;    /* biar tetap di tengah */
-  letter-spacing: 1px;
   line-height: 0.9;
+  letter-spacing: 1px;
+  text-align: center;
 }
 
 .footer-content {
@@ -141,24 +155,29 @@ footer {
   padding-bottom: 20px;
 }
 
-.footer-left, .footer-right {
+.footer-left,
+.footer-right {
   display: flex;
   gap: 15px;
 }
 
-.footer-left a, .footer-right a {
-  border: 1px solid white;
+.footer-left a,
+.footer-right a {
+  display: inline-block;
   padding: 8px 16px;
+
+  border: 1px solid #fff;
   border-radius: 20px;
   text-decoration: none;
-  color: white;
+
+  color: #fff;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
-.footer-left a:hover, .footer-right a:hover {
-  background: white;
-  color: black;
-  border-color: white;
+.footer-left a:hover,
+.footer-right a:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
 }
-
