@@ -134,7 +134,7 @@ footer {
   width: 100%;
   margin: 0;
   padding: 0 0 60px;
-  font-size: clamp(3rem, 10vw, 9.9rem); /* fleksibel di layar kecil */
+  font-size: clamp(3rem, 10vw, 9.9rem);
   font-weight: 900;
   line-height: 0.9;
   letter-spacing: 1px;
@@ -145,7 +145,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* biar bisa turun ke bawah di layar kecil */
+  flex-wrap: wrap;
   gap: 15px;
   padding-bottom: 20px;
 }
@@ -176,7 +176,7 @@ footer {
   border-color: #fff;
 }
 
-/* ===== Responsive (HP & Tablet) ===== */
+/* Responsive */
 @media (max-width: 768px) {
   .two-col {
     flex-direction: column;
