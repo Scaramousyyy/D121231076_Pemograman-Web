@@ -1,0 +1,43 @@
+.about-content{ 
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    gap:3.125rem 
+}
+
+.about-photo-container {
+  position: relative;
+  width: 126.1875rem;
+  height: 30.0625rem;
+}
+
+.about-photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+  box-shadow: 0 0.25rem 0.625rem rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-photo:hover{ 
+    transform:translateY(-0.3125rem); 
+    box-shadow:0 0.375rem 1rem rgba(0,0,0,0.2) 
+}
+
+.about-content h2{ 
+    font-family:'Inter',sans-serif; 
+    font-size:3rem; 
+    margin-bottom:1.25rem; 
+    margin-top:0.625rem; 
+    text-align:justify 
+}
+
+.highlight{ color:var(--accent) }
+
+.about-content p{ 
+    font-size:1.375rem; 
+    line-height:1.6; 
+    text-align:justify 
+}

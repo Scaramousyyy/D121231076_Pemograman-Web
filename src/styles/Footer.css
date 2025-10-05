@@ -1,0 +1,8 @@
+footer{ max-width:85.625rem; height:18.75rem; margin:2rem auto; background:var(--accent); color:#fff; border-radius:0.9375rem; box-shadow:0 0.25rem 0.9375rem rgba(0,0,0,0.3); overflow:hidden; animation:slideUp 1.2s ease forwards }
+.footer-name h2{ font-family:'Inter-emphasized',sans-serif; font-size:9.875rem; font-weight:900; line-height:1; margin:0; text-align:center }
+.footer-content{ display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:0.9375rem; padding-bottom:1.25rem }
+.footer-left, .footer-right{ display:flex; flex-wrap:wrap; gap:0.625rem; justify-content:center; padding-top:5rem }
+.footer-left{ padding-left:1.5625rem }
+.footer-right{ padding-right:1.5625rem }
+.footer-left a, .footer-right a{ display:inline-block; padding:0.5rem 1rem; border:1px solid #fff; border-radius:1.25rem; text-decoration:none; color:#fff; font-weight:600; transition:all .3s ease }
+.footer-left a:hover, .footer-right a:hover{ background:#fff; color:#000; border-color:#fff }

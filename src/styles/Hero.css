@@ -1,0 +1,139 @@
+.hero{
+  position:relative;
+  background:#fff; 
+  margin:7rem auto 2rem; 
+  padding:2rem; 
+  border-radius:1.25rem;
+  box-shadow:0 0.25rem 0.625rem rgba(0,0,0,0.15); 
+  width:75rem; 
+  height:34.375rem; 
+  overflow:hidden;
+  animation:slideUp 1.2s ease forwards; 
+  opacity:0;
+}
+
+.hero-photo{ 
+    position:absolute; 
+    bottom:0; 
+    left:50%;
+    width:27.5rem; 
+    height:37.6875rem; 
+    object-fit:cover; 
+    z-index:1; 
+    opacity:0; 
+    transform:translateX(-50%) scale(0.8); 
+    animation:fadeScale 0.5s ease forwards; 
+    animation-delay:1.2s 
+}
+
+.hero .greeting{ 
+    position:absolute; 
+    top:3.125rem; 
+    left:3.125rem; 
+    font-family:'Inter-emphasized',sans-serif; 
+    font-size:4rem; 
+    font-weight:900; 
+    margin:0; 
+    color:transparent; 
+    transition:transform .3s ease, color .3s ease 
+}
+
+.hero .greeting::after{ 
+    content:''; 
+    position:absolute; 
+    width:0%; 
+    height:100%; 
+    background:var(--accent); 
+    animation:slideReveal 1.2s ease forwards; 
+    animation-delay:1.3s; 
+    z-index:2 
+}
+
+.hero .greeting.finished{ color:#000 }
+
+.hero .intro{ 
+    position:absolute; 
+    top:10rem; 
+    right:12.5rem; 
+    font-family:'Inter-emphasized',sans-serif; 
+    font-size:4rem; 
+    font-weight:900; 
+    margin:0; 
+    color:transparent;
+    transition:transform .3s ease, color .3s ease;
+}
+
+.hero .intro::after{ 
+    content:''; 
+    position:absolute; 
+    top:0; 
+    right:0; 
+    width:0%; 
+    height:100%; 
+    background:var(--accent); 
+    animation:slideReveal 1.2s ease forwards; 
+    animation-delay:2.5s; 
+    z-index:2 
+}
+.hero .intro.finished{ color:#000 }
+
+.hero .name{ 
+    position:absolute; 
+    bottom:10.3125rem; 
+    font-family:'Inter-emphasized',sans-serif; 
+    font-size:8.875rem; 
+    font-weight:900; 
+    margin:0 auto; 
+    z-index:2; 
+    white-space:nowrap; 
+    color:transparent;
+    transition:transform .3s ease, color .3s ease;
+}
+
+.hero .name::after{ 
+    content:''; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:0%; 
+    height:100%; 
+    background:var(--accent); 
+    animation:slideReveal 1.8s ease forwards; 
+    animation-delay:3.7s; 
+    z-index:2 
+}
+.hero .name.finished{ color:var(--accent) }
+
+.hero .desc-left, .hero .desc-right{ 
+    position:absolute; 
+    bottom:0.625rem; 
+    width:31.5%; 
+    font-size:1.375rem; 
+    line-height:1.5; 
+    text-align:justify; 
+    z-index:1; 
+    color:transparent;
+    transition:transform .3s ease, color .3s ease;
+    min-height:7.5em;
+}
+
+.hero .desc-left{ left:3.125rem }
+
+.hero .desc-right{ right:3.125rem }
+
+.hero .desc-left::after, .hero .desc-right::after{ 
+    content:''; 
+    position:absolute; 
+    top:0; 
+    left:0; 
+    width:0%; 
+    height:100%; 
+    animation:slideReveal 1.5s ease forwards;
+    transition:transform .3s ease, color .3s ease;
+    animation-delay:5.5s; 
+    z-index:2;
+}
+
+.hero .desc-left.finished, .hero .desc-right.finished{ color:#000 }
+
+.hero .greeting:hover,.hero .intro:hover,.hero .name:hover,.hero .desc-left:hover,.hero .desc-right:hover{ transform:translateY(-5px) }
